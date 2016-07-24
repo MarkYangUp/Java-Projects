@@ -95,16 +95,7 @@
 
 	<%@ include file="HeaderNavBar.jsp" %>
 
-<% 
 
-String uid=(String)session.getAttribute("uid");
-
-if(uid==null){
-		response.sendRedirect("Invalid.jsp");
-		
-}
-
-%>
 	
 	
 	

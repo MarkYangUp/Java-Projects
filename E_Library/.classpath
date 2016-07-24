@@ -13,37 +13,37 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/commons-beanutils-1.7.0.jar">
+	<classpathentry kind="lib" path="C:/Java/mysql-connector-java-5.1.16-bin.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/commons-beanutils-1.8.0.jar">
+	<classpathentry kind="lib" path="C:/Java/library jars/commons-beanutils-1.7.0.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/commons-fileupload-1.2.2.jar">
+	<classpathentry kind="lib" path="C:/Java/library jars/commons-logging-1.0.4.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/commons-logging-1.0.4.jar">
+	<classpathentry kind="lib" path="C:/Java/library jars/jstl.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/jstl.jar">
+	<classpathentry kind="lib" path="C:/Java/library jars/standard.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/mysql-connector-java-5.1.13-bin.jar">
+	<classpathentry kind="lib" path="C:/Java/spring/commons-fileupload-1.2.2.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares/javaWorld/jars/standard.jar">
+	<classpathentry kind="lib" path="C:/Java/spring/commons-io-2.0.1.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>

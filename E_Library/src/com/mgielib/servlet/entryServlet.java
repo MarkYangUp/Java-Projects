@@ -35,6 +35,12 @@ public class entryServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	
+		response.setHeader("Cache-control", "no-cache");
+		response.addHeader("Cache-Control", "no-store");  
+		response.addHeader("Cache-Control", "must-revalidate");
+		response.setHeader("pragma", "no-cache");
+		
+		
 		CategoryDao obj=DaoFactory.getCategoryDao();
 		List<Category> al=obj.viewCategory();
 		request.setAttribute("category",al);

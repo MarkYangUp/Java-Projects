@@ -11,11 +11,12 @@ public class DBUtil {
     static String uid = "root";
     static String pwd = "root";
 
-	 /*static String driver = "com.mysql.jdbc.Driver";
+
+	/* static String driver = "com.mysql.jdbc.Driver";
 	    static String url = "jdbc:mysql://localhost/tvudtexq_mgielib";
 	    static String uid = "tvudtexq_Sanil";
-	    static String pwd = "rootdb";
-*/
+	    static String pwd = "rootdb";*/
+
 	public static Connection getConnection() throws Exception {
         Class.forName(driver);
         Connection con = DriverManager.getConnection(url, uid, pwd);

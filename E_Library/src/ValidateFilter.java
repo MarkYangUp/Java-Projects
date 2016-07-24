@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -18,6 +19,7 @@ import javax.servlet.http.HttpSession;
 @WebFilter("/*")
 public class ValidateFilter implements Filter {
 
+	
 	public void destroy() {
 		// TODO Auto-generated method stub
 	}
@@ -26,30 +28,40 @@ public class ValidateFilter implements Filter {
 		HttpServletRequest request=(HttpServletRequest) req;
 		HttpServletResponse response=(HttpServletResponse) res;
 		String str=request.getServletPath();
-		System.out.println("-------> "+str);
+		boolean next=false;
+//		System.out.println("-------> "+str);
 		
-		if(!(str.startsWith("/Main") || str.startsWith("/assets")||str.startsWith("/Invalid")||str.equals("/index.jsp"))){
-			
-			HttpSession session=request.getSession();
-			
+		if(str.startsWith("/Main") || str.startsWith("/assets")|| str.startsWith("/jq") || str.startsWith("/Invalid")||str.equals("/index.jsp")){
+		next=true;
+		}
+		
+		if(!next){			
+			HttpSession session=request.getSession();			
 				if(session.getAttribute("uid")==null){
 					response.sendRedirect("Invalid.jsp");
 					return;
 				}
+				next=true;
 		}
 		
-		
+
 		chain.doFilter(request, response);
+		
 		response.setContentType("text/html");
 		response.setHeader("Cache-control", "no-cache");
 		response.addHeader("Cache-Control", "no-store");  
 		response.addHeader("Cache-Control", "must-revalidate");
 		response.setHeader("pragma", "no-cache");
+		System.out.println("<<<<<----"+request.getRequestURI());
 		
 	}
 
-	public void init(FilterConfig fConfig) throws ServletException {
+	@Override
+	public void init(FilterConfig arg0) throws ServletException {
 		// TODO Auto-generated method stub
+		
 	}
+
+
 
 }

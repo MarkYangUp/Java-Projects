@@ -1,26 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html >
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author"      content="Sanil Jain(sanil.jain15@gmail.com)">
 	
 	<title>Sign In Page</title>
-
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-	<!-- Custom styles for our template -->
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="jqv/css/validationEngine.jquery.css" type="text/css"/>
+	<link rel="stylesheet" href="jqv/css/validationEngine.jquery.css" type="text/css"/>
 <link rel="stylesheet" href="jqv/css/template.css" type="text/css"/>
 <script src="jqv/js/jquery-1.8.2.min.js" type="text/javascript">
 	</script>
@@ -31,9 +20,26 @@
 	<script>
 		jQuery(document).ready( function() {
 			// binds form submission and fields to the validation engine
-			jQuery("#formID").validationEngine();
+			jQuery("#formID111").validationEngine('attach', {scroll: false});
 		});
 	</script>
+	
+	
+	
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png"/>
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" />
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	
+	
+
+	
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -72,14 +78,14 @@
 						
 							<hr>
 							
-							<form action="MainServlet" method="post" id="formID">
+							<form  id="formID111" action="MainServlet" method="post">
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>
-									<input  class="form-control validate[required] text-input" type="text" name="loginId">
+									<input type="text" name="loginId" class="form-control text-input validate[required]" >
 								</div>
 								<div class="top-margin">
 									<label>Password <span class="text-danger">*</span></label>
-									<input class="form-control validate[required] " type="password"  name="password">
+									<input  type="password"  name="password" class="form-control validate[required]">
 								</div>
 
 								<hr>

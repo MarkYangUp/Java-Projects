@@ -58,6 +58,24 @@
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
 	<title>Add Master</title>
+<link rel="stylesheet" href="jqv/css/validationEngine.jquery.css" type="text/css"/>
+<link rel="stylesheet" href="jqv/css/template.css" type="text/css"/>
+<script src="jqv/js/jquery-1.8.2.min.js" type="text/javascript">
+	</script>
+	<script src="jqv/js/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script src="jqv/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script>
+		jQuery(document).ready( function() {
+			// binds form submission and fields to the validation engine
+			jQuery("#formID1").validationEngine({scroll: false});
+			jQuery("#formID2").validationEngine({scroll: false});
+			jQuery("#formID3").validationEngine({scroll: false});
+			jQuery("#formID4").validationEngine({scroll: false});
+		});
+	</script>
+
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
@@ -70,25 +88,9 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="jqv/css/validationEngine.jquery.css" type="text/css"/>
-<link rel="stylesheet" href="jqv/css/template.css" type="text/css"/>
-<script src="jqv/js/jquery-1.8.2.min.js" type="text/javascript">
-	</script>
-	<script src="jqv/js/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8">
-	</script>
-	<script src="jqv/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
-	</script>
-	<script>
-		jQuery(document).ready( function() {
-			// binds form submission and fields to the validation engine
-			jQuery("#formID").validationEngine();
-		});
-	</script>
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+
+	
+
 </head>
 
 <body>
@@ -182,10 +184,10 @@ if(userType.equals("STUDENT")||userType.equals("NONFACULTY")){
 								<div class="row top-margin">	 
 									
 								<div class="Genre box">
-								<form action="GenreServlet" id="formID">
+								<form id="formID1" action="GenreServlet" method="post" >
 													
 									
-									Enter Genre:<input  class="form-control validate[required] text-input" type="text" name="genreName"/>
+									Enter Genre:<input  class="form-control text-input validate[required]" type="text" name="genreName"/>
 									<div class="row">
 									<div class="col-lg-8"></div>
 									<br>
@@ -224,7 +226,7 @@ if(userType.equals("STUDENT")||userType.equals("NONFACULTY")){
 								
 								<div class="Category box">
 								
-								<form action="CategoryServlet" id="formID">
+								<form action="CategoryServlet" id="formID2">
 								
 									
 									Enter Category:<input class="form-control validate[required] text-input" type="text"  name="catName"/>
@@ -264,7 +266,7 @@ if(userType.equals("STUDENT")||userType.equals("NONFACULTY")){
 								
 									
 							<div class="Subject box">
-							<form action="SubjectServlet"  id="formID">
+							<form action="SubjectServlet"  id="formID3">
 							
 							Subject Name:<input class="form-control validate[required] text-input" type="text"  name="subName"/><br/>
 							Subject Category:<input  class="form-control validate[required] text-input" type="text" name="category"/><br/>
@@ -303,7 +305,7 @@ if(userType.equals("STUDENT")||userType.equals("NONFACULTY")){
 													
 									
 								<div class="Publisher box">
-								<form action="PublisherServlet" id="formID">
+								<form action="PublisherServlet" id="formID4">
 							
 							Publisher Name<input class="form-control validate[required] text-input"  type="text" name="pubName"/><br/>
 							Publisher URL<input  value="http://" class="validate[required,custom[url]] text-input form-control" type="text" name="url"/><br/>
@@ -376,11 +378,6 @@ if(userType.equals("STUDENT")||userType.equals("NONFACULTY")){
 
 
 
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+	
 </body>
 </html>
