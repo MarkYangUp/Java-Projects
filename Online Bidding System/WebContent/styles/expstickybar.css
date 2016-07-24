@@ -1,0 +1,38 @@
+.expstickybar
+{
+
+	position:fixed;
+
+	color: #383838;
+
+	padding: 5px;
+	right:0; /*horizontally center bar in window*/
+
+	left:0; /*horizontally center bar in window*/
+
+	visibility:hidden;
+
+	 height:150px;
+	
+	 background: -webkit-radial-gradient(white,#0066CC ); /* Safari 5.1 to 6.0 */
+	 background: -o-radial-gradient(white,#0066CC); /* For Opera 11.6 to 12.0 */
+         background: -moz-radial-gradient(white,#0066CC ); /* For Firefox 3.6 to 15 */
+         background: radial-gradient(white,#0066CC ); /* Standard syntax (must be last) */
+       
+	
+z-index: 10000;
+
+	width:auto; /*set width of bar to width of entire window*/
+
+	font-weight:bold;
+
+}
+
+
+.expstickybar a
+{
+	
+color: #383838;
+
+}
+

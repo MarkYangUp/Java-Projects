@@ -1,0 +1,6 @@
+package com.medibidz.entity;
+
+public enum CategoryTypes
+{
+ELECTRONICGADGETS,BOOKS,NOTES,CLOTHES,STATIONERY,SOUVENIRS,VEHICLES,OTHERS,TOOLS,TOLET,BAGS
+}
