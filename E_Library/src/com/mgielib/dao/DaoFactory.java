@@ -14,23 +14,23 @@ import com.mgielib.dao.jdbc.EFacultyResourceDaoImpl;
 
 public class DaoFactory {
 
-	public static CategoryDao getCategoryDao(){
+public static CategoryDao getCategoryDao(){
 	return new CategoryDaoImpl();
-							}
-public static AuthorDao getAuthorDao(){
-		return new AuthorDaoImpl();
+}
 
-					}
+public static AuthorDao getAuthorDao(){
+	return new AuthorDaoImpl();
+}
 
 public static SubjectDao getSubjectDao(){
-		return new SubjectDaoImpl();
+	return new SubjectDaoImpl();
 }
 
 public static GenreDao getGenreDao(){
 	return new GenreDaoImpl();
 }
 public static SearchCriteriaDao getSearchCriteriaDao(){
-		return new SearchCriteriaDaoImpl();	
+	return new SearchCriteriaDaoImpl();	
 }
 
 public static PublisherDao getPublisherDao(){
